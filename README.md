@@ -1,5 +1,3 @@
-#CI Test Demo
-
 ![CI](https://github.com/AlenChet/dnd/actions/workflows/web.yml/badge.svg)
 
 # Домашнее задание к занятию "6. Работа с файлами, DnD"
