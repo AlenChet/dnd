@@ -89,15 +89,21 @@ export default class CardManager {
     });
   }
 
-  closeClick() {
-    const cardContent = this.card.closest('.card_content');
+  closeClick(card) {
+    if (!card) return; 
+  
+    const cardContent = card.closest('.card_content');
     if (cardContent) {
       cardContent.remove();
     }
   }
 
-  hiddenClose() {
-    const close = this.card.querySelector('.card_delete');
+  hiddenClose(card) {
+    if (!card) return; 
+  
+    const close = card.querySelector('.card_delete');
+    if (!close) return;
+  
     close.classList.add('hidden');
   }
 
